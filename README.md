@@ -32,7 +32,7 @@ command depends on your present working directory), then please note that contex
    
 ## Exercise Steps
 
-1. Consider the recursive Fibonacci program given below.
+1. Consider the recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) program given below.
 
    ```java
     public class Fib {
