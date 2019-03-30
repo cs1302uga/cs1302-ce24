@@ -52,39 +52,40 @@ command depends on your present working directory), then please note that contex
     ```
 
 1. Draw a diagram that illustrates a new stack frame being added to the call stack or an existing stack frame
-   being removed (popped) from the call stack as `fibonacci(5)` is executed. Be sure to include any local variables
+   being removed (popped) from the call stack as `fibonacci(4)` is executed. Be sure to include any local variables
    and return values in each stack frame.
     
    Redraw the entire picture after each modification to the stack frame as is done in the tutorial.
-   The picture below illustrates the execution of `fibonacci(3)`. Use this as an example for your diagram.
+   The picture below illustrates the execution of `fibonacci(2)`. Use this as an example for your diagram.
    
    Example:
     ```
      immediately             immediately             immediately             immediately
-     after calling           after calling           after calling           after calling 
-     fibonacci(3)            fibonacci(2)            fibonacci(1)            fibonacci(0)
+     after calling           after calling           after returning         after calling 
+     fibonacci(2)            fibonacci(1)            fibonacci(1)            fibonacci(0)
     |------------------|    |------------------|    |------------------|    |------------------|
-    | [calling method] | => | [calling method] | => | [calling method] | => | [calling method] |
-    |------------------|    |------------------|    |------------------|    |------------------|
-    | [fibonacci(3)]   |    | [factorial(3)]   |    | [factorial(3)]   |    | [factorial(3)]   |
-    | n = 3            |    | n = 3            |    | n = 3            |    | n = 3            |
-    | return 3 * ?     |    | return 3 * ?     |    | return 3 * ?     |    | return 3 * ?     |
-    |------------------|    |------------------|    |------------------|    |------------------|
-                            | [factorial(2)]   |    | [factorial(2)]   |    | [factorial(2)]   | 
-                            | n = 2            |    | n = 2            |    | n = 2            |
-                			| return 2 * ?     |    | return 2 * ?     |    | return 2 * ?     |
-                            |------------------|    |------------------|    |------------------|
-                                                    | [factorial(1)]   |    | [factorial(1)]   | 
-                                                    | n = 1            |    | n = 1            |
-					                            	| return 1 * ?     |    | return 1 * ?     |
-                                                    |------------------|    |------------------|
-                                                                            | [factorial(0)]   |
-                                                                            | n = 0            |
-                                        									| return 1         |
-                                                                            |------------------|
+    | [calling method] | => | [calling method] | => | [calling method] | => | [calling method] | =>
+    |------------------|    |------------------|    |------------------|    |------------------|   
+    | [fibonacci(2)]   |    | [fibonacci(2)]   |    | [fibonacci(2)]   |    | [fibonacci(2)]   |   
+    | n = 2            |    | n = 2            |    | n = 2            |    | n = 2            |   
+    | return ?         |    | return ?         |    | return 1 + ?     |    | return 1 + ?     |   
+    |------------------|    |------------------|    |------------------|    |------------------|   
+                            | [fibonacci(1)]   |                            | [fibonacci(0)]   |  
+                			| return  1        |                            | return 0         |  
+                            |------------------|                            |------------------|  
+
+     immediately             immediately        
+     after returning         after returning
+     fibonacci(0)            fibonacci(2)       
+    |------------------|    |------------------|
+    | [calling method] | => | [calling method] |
+    |------------------|    |------------------|
+    | [fibonacci(2)]   |     Now has value 6
+    | n = 2            |    
+    | return 1 + 0     |    
+    |------------------|    
+                            
 ```
-   
-  
    
 1. In your notes, write your expected output for the four `System.out.println` statements in the code based 
    on the diagram you created in the previous step. 
