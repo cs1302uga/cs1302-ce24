@@ -54,7 +54,8 @@ command depends on your present working directory), then please note that contex
    
 ## Exercise Steps
 
-1. Consider the recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) program given below.
+1. Create a `cs1302.ce24.Fib` class based on code below that provides a
+   recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method.
 
    ```java
     public class Fib {
@@ -71,6 +72,9 @@ command depends on your present working directory), then please note that contex
         
     } // Fib
     ```
+    
+1. **Next, use Maven to compile and the code.** Please use the `exec:java` phase to run.
+   After you've confirmed that it compiles and runs, please add and commit `Fib.java`.
 
 1. Draw a diagram that depicts how the call stack changes immediately after each invocation
    and return of the recursive method calls in an execution of `fibonacci(4)`. That is, you should
