@@ -113,7 +113,10 @@ command depends on your present working directory), then please note that contex
     ```
 
 **CHECKPOINT**
-
+implement `DownUp(String str)`. Give example execution with "Dawgs" as input.
+**CHECKPOINT**
+implement `public static List<String> split(String str, String delim);`
+**CHECKPOINT**
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
