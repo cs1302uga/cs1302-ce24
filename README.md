@@ -72,7 +72,8 @@ command depends on your present working directory), then please note that contex
                             | [fibonacci(1)]   |                            | [fibonacci(0)]   |  
                             | return  1        |                            | return 0         |  
                             |------------------|                            |------------------|  
-
+    ```
+    ```
      immediately             immediately        
      after returning         after returning
      fibonacci(0)            fibonacci(2)       
