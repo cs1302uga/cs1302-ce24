@@ -2,7 +2,7 @@
 
 > "To understand recursion, you must understand recursion"
 
-This class exercise explores the concept of [recursion](http://google.com/search?q=recursion).
+This class exercise explores the concept of [recursion](https://github.com/cs1302uga/cs1302-ce24).
 
 ## References and Prerequisites
 
