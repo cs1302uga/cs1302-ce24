@@ -2,7 +2,7 @@
 
 > "To understand recursion, you must understand recursion"
 
-This class exercise explores the concept of recursion.
+This class exercise explores the concept of [recursion](http://google.com/search?q=recursion).
 
 ## References and Prerequisites
 
