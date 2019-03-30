@@ -54,91 +54,37 @@ command depends on your present working directory), then please note that contex
    and return of the recursive method calls in an execution of `fibonacci(4)`. That is, you should
    redraw the call stack after each recusive call is added (pushed) and removed (popped) from
    the call stack during execution. The stack frames in your diagram should include local
-   variables and the return value (use `?` if uknown). As an example, here is a depiction for
+   variables and the return value (use `?` if unknown). As an example, here is a depiction for
    `fibonacci(2)`:
 
     ```
      immediately             immediately             immediately             immediately
      after calling           after calling           after returning         after calling 
-     fibonacci(2)            fibonacci(1)            fibonacci(1)            fibonacci(0)
+     fibonacci(2)            fibonacci(0)            fibonacci(0)            fibonacci(1)
     |------------------|    |------------------|    |------------------|    |------------------|
     | [calling method] | => | [calling method] | => | [calling method] | => | [calling method] | =>
     |------------------|    |------------------|    |------------------|    |------------------|   
     | [fibonacci(2)]   |    | [fibonacci(2)]   |    | [fibonacci(2)]   |    | [fibonacci(2)]   |   
     | n = 2            |    | n = 2            |    | n = 2            |    | n = 2            |   
-    | return ?         |    | return ?         |    | return 1 + ?     |    | return 1 + ?     |   
+    | return ? +       |    | return ? + ?     |    | return 1 + ?     |    | return 1 + ?     |   
     |------------------|    |------------------|    |------------------|    |------------------|   
-                            | [fibonacci(1)]   |                            | [fibonacci(0)]   |  
-                            | return  1        |                            | return 0         |  
+                            | [fibonacci(0)]   |                            | [fibonacci(1)]   |  
+                            | return  1        |                            | return 1         |  
                             |------------------|                            |------------------|  
     ```
     ```
      immediately             immediately        
      after returning         after returning
-     fibonacci(0)            fibonacci(2)       
+     fibonacci(1)            fibonacci(2)       
     |------------------|    |------------------|
     | [calling method] | => | [calling method] |
     |------------------|    |------------------|
-    | [fibonacci(2)]   |     Now has value 6
+    | [fibonacci(2)]   |     Now has value 2
     | n = 2            |    
-    | return 1 + 0     |    
+    | return 1 + 1     |    
     |------------------|    
                             
     ```
-
-**CHECKPOINT**
-   
-1. In your notes, write your expected output for the four `System.out.println` statements in the code based 
-   on the diagram you created in the previous step. 
-   
-1. Make sure you are in the `cs1302-ce11` directory. Write the exact command to:
-   1. Compile `Driver.java` specifying `bin` as the default package location for your compiled code.
-   1. Run `cs1302.list.Driver`.
-   
-   **NOTE:** This program depends on two different sets of compiled code: i) the compiled code you placed
-   into `bin`; and ii) the compiled code in the JAR file. You will need to place the paths to the default 
-   package locations for both on the class path in order to run your program.
-
-1. Write the output from the program in your notes. If your expected output does not match the output from the 
-   program execution, repeat the last three steps using a new piece of paper.
-   
-**CHECKPOINT**
-
-1. In `Driver.java`, add a method to print the string value of the third `StringList.Node` in the list. Your
-   method should take a single `StringList.Node` parameter representing the starting node. The method must
-   begin with the starting node and traverse the `next` links to print the third node.
-   
-1. In your notes, write down the expected output of calling your new method from `main` passing in 
-   the preexisting `StringList.Node` references (`end`, `node`, and `n`) as the actual parameters.
-
-1. From the `main` method of `Driver.java`, make three separate calls to your new method using `end`, `node`,
-   and `n` as the actual parameters.
-   
-1. Compile and run your `Driver` program. 
-
-1. Write the output from the program in your notes. If your expected output does not match the output from the 
-   program execution, indicate the reason(s) in your notes.
-   
-1. Your `Driver` program likely threw an unchecked exception when you ran it. Update your code to handle this 
-   type of error instead of crashing. In your notes, explain how you handled it and why you handled it this way.
-
-**CHECKPOINT**
-
-1. In `Driver.java`, add a method to insert a `StringList.Node` into the third position in the list. It should 
-   shift the node currently at that position (if any) and any subsequent nodes to the right. Your 
-   method should take two `StringList.Node` parameters, one representing the starting node and another
-   representing a node to insert. The method must begin with the starting node and traverse the `next` links to
-   move toward the correct position. You should assume the node to insert is not already in the list.
-  
-1. In your notes, draw the expected linked list after calling your new insert method from `main` passing in 
-   the `node` reference as the starting point along with a new node containing the string "Cupid". Your diagram 
-   should illustrate any nodes that have been created along with their associated string values and next 
-   references.
-
-1. At the end of the `main` method of `Driver.java`, add the method call described in the previous step.
-   
-1. Write a method to verify that your insert method worked correctly. The output from this method should convince
-   your instructor/TA that your method worked.
 
 **CHECKPOINT**
 
