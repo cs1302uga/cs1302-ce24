@@ -71,7 +71,7 @@ command depends on your present working directory), then please note that contex
     | return ?         |    | return ?         |    | return 1 + ?     |    | return 1 + ?     |   
     |------------------|    |------------------|    |------------------|    |------------------|   
                             | [fibonacci(1)]   |                            | [fibonacci(0)]   |  
-                			| return  1        |                            | return 0         |  
+                            | return  1        |                            | return 0         |  
                             |------------------|                            |------------------|  
 
      immediately             immediately        
@@ -85,7 +85,9 @@ command depends on your present working directory), then please note that contex
     | return 1 + 0     |    
     |------------------|    
                             
-```
+    ```
+
+**CHECKPOINT**
    
 1. In your notes, write your expected output for the four `System.out.println` statements in the code based 
    on the diagram you created in the previous step. 
