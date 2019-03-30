@@ -50,14 +50,13 @@ command depends on your present working directory), then please note that contex
     } // Fib
     ```
 
-1. Draw a diagram that illustrates a new stack frame being added to the call stack or an existing stack frame
-   being removed (popped) from the call stack as `fibonacci(4)` is executed. Be sure to include any local variables
-   and return values in each stack frame.
-    
-   Redraw the entire picture after each modification to the stack frame as is done in the tutorial.
-   The picture below illustrates the execution of `fibonacci(2)`. Use this as an example for your diagram.
-   
-   Example:
+1. Draw a diagram that depicts how the call stack changes immediately after each invocation
+   and return of the recursive method calls in an execution of `fibonacci(4)`. That is, you should
+   redraw the call stack after each recusive call is added (pushed) and removed (popped) from
+   the call stack during execution. The stack frames in your diagram should include local
+   variables and the return value (use `?` if uknown). As an example, here is a depiction for
+   `fibonacci(2)`:
+
     ```
      immediately             immediately             immediately             immediately
      after calling           after calling           after returning         after calling 
