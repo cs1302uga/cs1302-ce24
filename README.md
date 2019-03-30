@@ -19,16 +19,38 @@ command depends on your present working directory), then please note that contex
 
 ### Getting Started
 
-1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce24`:
+1. Using Maven, create a project directory for this exercise called `cs1302-ce24` with a primary 
+   package called `cs1302.ce24`.
 
-   ```
-   $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce24.git
-   ```
-
-1. Change into the `cs1302-ce24` directory that was just created and look around. There should be
-   almost nothing there! That's okay.
-
-    **We might not give you any starter code.  Not sure yet.**
+1. Change into the `cs1302-ce24` directory that you just created using Maven, then do the
+   following:
+   
+   1. Initialize a new Git repository:
+      
+      ```
+      $ git init
+      ```
+      
+   1. Create a [`.gitignore`](https://git-scm.com/docs/gitignore) (hidden file) with the following contents:
+   
+      ```
+      bin/
+      doc/
+      target/
+      *.class
+      hs_err_pid*
+      *~
+      \#*\#
+      core.*
+      ```
+      
+      Add and commit the `.gitignore` file to the repository.
+      
+   1. Update the POM so that the project works with Java 8. After that, use Git to track the `pom.xml`, 
+      then commit it to the repository, then add and commit the `pom.xml` file to the repository.
+   
+   1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce24/App.java`) and the unit test files 
+      (i.e., everything under `src/test/java`). Finally, add and commit the `src` directory to the repository.
    
 ## Exercise Steps
 
