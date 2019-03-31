@@ -144,8 +144,11 @@ command depends on your present working directory), then please note that contex
 
 1. Create a new Java file in your Maven project. The FQN for the file should be `cs1302.ce24.RecursionPractice`.
 1. Add the class declaration and appropriate package statements at the top of `RecursionPractice.java`.
-1. In `RecursionPractice`, create a static method called `downUp` that takes a single `String` reference as
-   input. If `downUp("Dawgs")` is invoked, then the following output should be produced:
+1. Consider the output below for a call to a method `downUp("Dawgs")`. We will write the code to do this eventually
+   but, first, **in your notes**:
+   * Identify the base case(s). Give an example.
+   * Identify the recursive case(s).
+   * Draw the recursion tree for `downUp("Dawgs")`.
    
    ```
    Dawgs
@@ -159,6 +162,10 @@ command depends on your present working directory), then please note that contex
    Dawgs
    ```
 
+**CHECKPOINT**
+
+1. In `RecursionPractice`, create the static method `downUp` that takes a single `String` reference as
+   input.
 1. Execute your code on various input strings to verify that it is working properly.
 1. Save and commit your changes.
 
