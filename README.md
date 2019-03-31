@@ -46,18 +46,21 @@ command depends on your present working directory), then please note that contex
       
       Add and commit the `.gitignore` file to the repository.
       
-   1. Update the POM so that the project works with Java 8. After that, use Git to track the `pom.xml`, 
-      then commit it to the repository, then add and commit the `pom.xml` file to the repository.
+   1. Update the POM so that the project works with Java 8. After that, add and commit the `pom.xml` file to 
+      the repository.
    
    1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce24/App.java`) and the unit test files 
-      (i.e., everything under `src/test/java`). Finally, add and commit the `src` directory to the repository.
+      (i.e., everything under `src/test/java`). We won't add the `src` folder to the repository at this time
+      because it only contains empty subdirectories. Git will not track empty directories.
    
 ## Exercise Steps
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
-   recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method.
+   recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
+   a package statement and necessary imports.
 
    ```java
+    
     public class Fib {
 
         public static void main(String[] args) {
@@ -73,8 +76,9 @@ command depends on your present working directory), then please note that contex
     } // Fib
     ```
     
-1. **Next, use Maven to compile and the code.** Please use the `exec:java` phase to run.
-   After you've confirmed that it compiles and runs, please add and commit `Fib.java`.
+1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
+   After you've confirmed that it compiles and runs, add and commit your `src` directory which
+   now contains `Fib.java` in one of its subdirectories.
 
 1. Read and understand the two approaches below for diagramming the changes to the call stack
    as a recursive method executes.
