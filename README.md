@@ -76,12 +76,11 @@ command depends on your present working directory), then please note that contex
 1. **Next, use Maven to compile and the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, please add and commit `Fib.java`.
 
-1. Draw a diagram that depicts how the call stack changes immediately after each invocation
-   and return of the recursive method calls in an execution of `fibonacci(4)`. That is, you should
+1. The diagram below depicts how the call stack changes immediately after each invocation
+   and return of the recursive method calls in an execution of `fibonacci(2)`. Here, we 
    redraw the call stack after each recusive call is added (pushed) and removed (popped) from
-   the call stack during execution. The stack frames in your diagram should include local
-   variables and the return value (use `?` if unknown). As an example, here is a depiction for
-   `fibonacci(2)`:
+   the call stack during execution. The stack frames include local variables and the return 
+   value (using `?` if unknown). 
 
     ```
      immediately             immediately             immediately             immediately
@@ -111,11 +110,73 @@ command depends on your present working directory), then please note that contex
     |------------------|    
                             
     ```
+    For larger inputs, redrawing the call stack whenever a frame is added or removed becomes time consuming
+    and error-prone. An alternative is to only redraw the call stack when a frame is removed (popped). In other
+    words, we add frames to the existing picture and redraw only when a method returns. The example below 
+    demonstrates this approach. 
+    
+    ```
+     immediately             immediately             immediately             immediately
+     after calling           after returning         fter returning          after returning
+     fibonacci(2)            fibonacci(0)            fibonacci(1)            fibonacci(2)
+     and fibonacci(0)        and calling 
+                             fibonacci(1)
+    |------------------|    |------------------|    |------------------|    |------------------|
+    | [calling method] | => | [calling method] | => | [calling method] | => | [calling method] |
+    |------------------|    |------------------|    |------------------|    |------------------|   
+    | [fibonacci(2)]   |    | [fibonacci(2)]   |    | [fibonacci(2)]   |     Now has value 2
+    | n = 2            |    | n = 2            |    | n = 2            | 
+    | return ? +       |    | return ? + ?     |    | return 1 + 1     | 
+    |------------------|    |------------------|    |------------------| 
+    | [fibonacci(0)]   |    | [fibonacci(1)]   |  
+    | return  1        |    | return 1         |  
+    |------------------|    |------------------|  
+    ```
+
+   Using the second approach, diagram the changes to the call stack as `fibonacci(4)` executes. 
+   
+**CHECKPOINT**
+
+1. Create a new Java file in your Maven project. The FQN for the file should be `cs1302.ce24.RecursionPractice`.
+1. Add the class declaration and appropriate package statements at the top of `RecursionPractice.java`.
+1. In `RecursionPractice`, create a static method called `downUp` that takes a single `String` reference as
+   input. If `downUp("Dawgs")` is invoked, then the following output should be produced:
+   
+   ```
+   Dawgs
+   Dawg
+   Daw
+   Da
+   D
+   Da
+   Daw
+   Dawg
+   Dawgs
+   ```
+
+1. Execute your code on various input strings to verify that it is working properly.
+1. Save and commit your changes.
 
 **CHECKPOINT**
-implement `DownUp(String str)`. Give example execution with "Dawgs" as input.
-**CHECKPOINT**
-implement `public static List<String> split(String str, String delim);`
+
+1. Create a new method in `RecursionPractice` called `splitString` with the following signature:
+   `public static List<String> splitString(String str, String delim)`.
+
+1. Implement the `splitString` method using recursion (no loops!). The method should split the 
+   specified string into tokens based off of the provided delimiter. Each token will be added to
+   the returned `List<String>`.
+   Here are a few examples:
+   
+   |Call                                          |Returned List                                |
+   |----------------------------------------------|---------------------------------------------|
+   |splitString("Hello 1302 students!", " ")      | ["Hello", "1302", "Students!"]              |
+   |splitString("1234.1,12345,23213,12,1,1", ",") | ["1234.1", "12345", "23213", "12", "1", "1"]|
+   |splitString("GNU's not Unix", "'")            | ["GNU", "s not Unix"]                       |
+   |splitString("Recursion is fun!, "9")          | ["Recursion is fun!"]                       |
+   
+1. Execute your code on various input strings to verify that it is working properly.
+1. Save and commit your changes.
+   
 **CHECKPOINT**
 <hr/>
 
