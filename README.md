@@ -168,12 +168,12 @@ command depends on your present working directory), then please note that contex
    the returned `List<String>`.
    Here are a few examples:
    
-   |Call                                          |Returned List                                |
-   |----------------------------------------------|---------------------------------------------|
-   |splitString("Hello 1302 students!", " ")      | ["Hello", "1302", "Students!"]              |
-   |splitString("1234.1,12345,23213,12,1,1", ",") | ["1234.1", "12345", "23213", "12", "1", "1"]|
-   |splitString("GNU's not Unix", "'")            | ["GNU", "s not Unix"]                       |
-   |splitString("Recursion is fun!, "9")          | ["Recursion is fun!"]                       |
+   |Call                                            |Returned List                                  |
+   |------------------------------------------------|-----------------------------------------------|
+   |`splitString("Hello 1302 students!", " ")`      | `["Hello", "1302", "Students!"]`              |
+   |`splitString("1234.1,12345,23213,12,1,1", ",")` | `["1234.1", "12345", "23213", "12", "1", "1"]`|
+   |`splitString("GNU's not Unix", "'")`            | `["GNU", "s not Unix"]`                       |
+   |`splitString("Recursion is fun!, "9")`          | `["Recursion is fun!"]`                       |
    
 1. Execute your code on various input strings to verify that it is working properly.
 1. Save and commit your changes.
