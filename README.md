@@ -131,7 +131,7 @@ command depends on your present working directory), then please note that contex
         |------------------|    |------------------|    |------------------|    |------------------|   
         | [fibonacci(2)]   |    | [fibonacci(2)]   |    | [fibonacci(2)]   |     Now has value 2
         | n = 2            |    | n = 2            |    | n = 2            | 
-        | return ? +       |    | return ? + ?     |    | return 1 + 1     | 
+        | return ? + ?     |    | return 1 + ?     |    | return 1 + 1     | 
         |------------------|    |------------------|    |------------------| 
         | [fibonacci(0)]   |    | [fibonacci(1)]   |  
         | return  1        |    | return 1         |  
