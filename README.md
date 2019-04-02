@@ -146,8 +146,11 @@ command depends on your present working directory), then please note that contex
 1. Add the class declaration and appropriate package statements at the top of `RecursionPractice.java`.
 1. Consider the output below for a call to a method `downUp("Dawgs")`. We will write the code to do this eventually
    but, first, **in your notes**:
+   
    * Identify the base case(s). Give an example.
+   
    * Identify the recursive case(s).
+   
    * Draw the recursion tree for `downUp("Dawgs")`.
    
    ```
@@ -166,20 +169,29 @@ command depends on your present working directory), then please note that contex
 
 1. In `RecursionPractice`, create the static method `downUp` that takes a single `String` reference as
    input.
+   
 1. Execute your code on various input strings to verify that it is working properly.
+
 1. Save and commit your changes.
 
 **CHECKPOINT**
 
 1. Create a new method in `RecursionPractice` called `splitString` with the following signature:
-   `public static List<String> splitString(String str, String delim)`.
 
-1. Implement the `splitString` method using recursion (no loops!). The method should split the 
+   ```
+   public static List<String> splitString(String str, String delim)
+   ```
+   
+   where `List<E>` is [`java.util.List<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/List.html),
+   which has known impementations like [`ArrayList<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
+   and [`LinkedList<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html).
+
+1. Implement the `splitString` method using recursion (**no loops!**). The method should split the 
    specified string into tokens based off of the provided delimiter. Each token will be added to
    the returned `List<String>`.
    Here are a few examples:
    
-   |Call                                            |Returned List                                  |
+   | Call                                           | Returned List                                 |
    |------------------------------------------------|-----------------------------------------------|
    |`splitString("Hello 1302 students!", " ")`      | `["Hello", "1302", "Students!"]`              |
    |`splitString("1234.1,12345,23213,12,1,1", ",")` | `["1234.1", "12345", "23213", "12", "1", "1"]`|
@@ -187,6 +199,7 @@ command depends on your present working directory), then please note that contex
    |`splitString("Recursion is fun!, "9")`          | `["Recursion is fun!"]`                       |
    
 1. Execute your code on various input strings to verify that it is working properly.
+
 1. Save and commit your changes.
    
 **CHECKPOINT**
