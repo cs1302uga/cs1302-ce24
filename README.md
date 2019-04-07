@@ -1,4 +1,4 @@
-# cs1302-ce24
+# cs1302-ce24 Recursive Problems
 
 > "To understand recursion, you must understand recursion"
 
