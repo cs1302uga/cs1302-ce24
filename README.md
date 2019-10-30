@@ -58,23 +58,31 @@ command depends on your present working directory), then please note that contex
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
    a package statement and necessary imports.
-
+   
    ```java
+   /**
+    * Fibonacci convenience class.
+    */
+   public class Fib {
+
+       public static void main(String[] args) {
+           System.out.println(fibonacci(5));
+       } // main
+
+       /**
+        * Returns the Fibonacci number at index {@code n}.
+        * @param n index
+        * @return Fibonacci number at index {@code n}
+        */
+       public static int fibonacci(int n) {
+           if ((n == 0) || (n == 1)) {
+               return 1;
+           } // if
+           return fibonacci(n - 2) + fibonacci(n - 1);
+       } // fibonacci
     
-    public class Fib {
-
-        public static void main(String[] args) {
-            System.out.println(fibonacci(5));
-        } // main
-
-        public static int fibonacci(int n) {
-            if (n == 0) return 1;
-            if (n == 1) return 1;
-            return fibonacci(n - 2) + fibonacci(n - 1);      
-        } // fibonacci
-        
-    } // Fib
-    ```
+   } // Fib
+   ```
     
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
