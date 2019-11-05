@@ -1,8 +1,17 @@
 # cs1302-ce24 Recursive Problems
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 > "To understand recursion, you must understand recursion"
 
 This class exercise explores the concept of [recursion](https://github.com/cs1302uga/cs1302-ce24).
+
+## Course-Specific Learning Outcomes
+* **LO2.c:** Use recursion to solve a non-trivial problem in a software solution.
+* **LO5.b:** (Partial) Utilize a build tool such as Maven or Ant to create and manage a
+complex software solution involving external dependencies.
+* **LO7.c:** (Partial) Use common abstract data types and structures, including lists, queues, arrays,
+and stacks in solving typical problems.
 
 ## References and Prerequisites
 
