@@ -140,6 +140,7 @@ command depends on your present working directory), then please note that contex
        at cs1302.ce24.Fac.factorial(Fac.java:25)
        at cs1302.ce24.Fac.main(Fac.java:9)
        [...] Maven-related portion of the call stack.
+   6
    ```
    
    Once your have observed the program output, please answer the following questions in the
