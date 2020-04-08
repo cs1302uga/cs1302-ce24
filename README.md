@@ -150,8 +150,8 @@ command depends on your present working directory), then please note that contex
       pushed onto the call stack or in the reverse order? Please write "in order" or "reverse order".
    
    1. There are 8 depictions (i.e., 1 -- 8) of the call stack in the diagrams provided 
-      earlier for `factorial(3)`. Which depiction matches up with the program output if
-      line of output containing `java.lang.Thread.dumpStack` is ignored?
+      earlier for `factorial(3)`. Which depiction best matches up with the program output if
+      the Maven-related lines and the line of output containing `java.lang.Thread.dumpStack` is ignored?
       
    1. In the diagrams provided earlier for `factorial(3)`, we labeled one frame as the
       "calling method". What is the name of the calling method based on the program
