@@ -184,7 +184,7 @@ command depends on your present working directory), then please note that contex
 1. After you've included your answers in the code, save and commit your changes, 
    **then tag it as `checkpoint-1.3`**.
   
-![CP1.2](https://img.shields.io/badge/Finished%20Checkpoint-1%2E2-success?style=for-the-badge)   
+![CP1.3](https://img.shields.io/badge/Finished%20Checkpoint-1%2E3-success?style=for-the-badge)   
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
