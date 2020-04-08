@@ -275,13 +275,40 @@ command depends on your present working directory), then please note that contex
    should not narrate the code; instead it should describe the output based on the method's 
    input.
    
+   * Feel free to use `CallStackApp` to rapidly try different inputs so that you can get
+     a better idea of what the method is doing.
+   
 1. After you've finished documenting the code, add and commit your `src` directory which
    now contains `DownUp.java` in one of its subdirectories, **then tag it as `checkpoint-3.1`**.
    Please ensure you pass `checkstyle`.
 
 ![CP3.1](https://img.shields.io/badge/Finished%20Checkpoint-3%2E1-success?style=for-the-badge)  
 
-**CHECKPOINT**
+1. The `downUp` method that we provided is interesting because each call to `fibonacci`
+   performs a `println` before and after its recursive call (i.e., in its recursive case). 
+   Add the following multi-line comment to the end of `DownUp.java`, then use it to fill 
+   in answers for the questions below.
+   
+   ```java
+   /* CHECKPOINT 3.2
+    *   i. INSERT ANSWER HERE
+    *  ii. INSERT ANSWER HERE
+    * iii. INSERT ANSWER HERE
+    */
+    ```
+
+    1. Write a `boolean` expression using `str` that is `true` if, and only if `downUp` is in a **base case**.
+    
+    2. Write a `boolean` expression using `str` that is `true` if, and only if `downUp` is in a **recursive case*.
+    
+    3. If you exclude the calling method, what is the maximum number of `downUp` 
+       frames that need to fit on the call stack at any point in time to execute
+       `downUp("Dawgs")`? 
+
+1. After you've included your answers in the code, save and commit your changes,
+   **then tag it as `checkpoint-3.2`**. Please ensure you pass `checkstyle`.
+
+![CP3.2](https://img.shields.io/badge/Finished%20Checkpoint-3%2E2-success?style=for-the-badge)   
 
 1. Create a new Java file in your Maven project. The FQN for the file should be `cs1302.ce24.RecursionPractice`.
 1. Add the class declaration and appropriate package statements at the top of `RecursionPractice.java`.
