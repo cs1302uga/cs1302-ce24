@@ -170,13 +170,13 @@ command depends on your present working directory), then please note that contex
 1. Run the `CallStackApp` program to explore some call stacks using a GUI: 
 
    ```
-   $ CallStackApp
+   $ CallStackApp &
    ```
    
    ![CallStackApp Screenshot](callstack_app.PNG)
    
-1. Add the following multi-line comment to the end of `Fac.java`, then use it to fill in answers
-   for the questions below.
+1. Add the following multi-line comment to the end of `Fac.java` (after the endinf curly brace for the class}, 
+   then use it to fill in answers for the questions below.
    
    ```java
    /* CHECKPOINT 1.3
@@ -186,8 +186,9 @@ command depends on your present working directory), then please note that contex
     */
    ```
    
-   1. Using `CallStackApp`, invoke the `factorial` method with `3` supplied for `n`. Do the call stack
-      depcitions in the app line up with the diagram presented for `factorial(3)` earler in this exercise?
+   1. Using `CallStackApp`, invoke the `factorial` method with `3` supplied for `n`. As you scroll to
+      to the right, do the call stack depictions in the app line up with the diagram presented for 
+      `factorial(3)` earler in this exercise?
       
    2. If you exclude the calling method (which is omitted in the output of `CallStackApp`), what is the
       maximum number of `factorial` frames that need to fit on the call stack at any point in time to
