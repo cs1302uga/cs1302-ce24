@@ -100,7 +100,7 @@ command depends on your present working directory), then please note that contex
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
    now contains `Facjava` in one of its subdirectories, **then tag it as `checkpoint-1.1`.
   
-![CP](https://img.shields.io/badge/Checkpoint-1.1-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Checkpoint-1%2E1-success?style=for-the-badge)
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
