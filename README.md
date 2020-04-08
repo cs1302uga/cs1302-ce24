@@ -341,6 +341,10 @@ command depends on your present working directory), then please note that contex
    
    ![`splitString` tree example](splitString_tree.png)
    
+   We say _recursion-like_ because this tree shows more than just recursive calls. It provides a big
+   hint about the base case formulation, and it illustrates that some work needs to be done in the
+   recursive case between the recursive call and the return statement.
+   
 1. Add a `main` method to execute your `splitString` method with various input strings to verify that 
    it works properly. At the very least, please check it with the examples above. You may find the
    following method useful to include for testing purposes:
