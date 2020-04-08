@@ -98,7 +98,7 @@ command depends on your present working directory), then please note that contex
     
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
-   now contains `Facjava` in one of its subdirectories, **then tag it as `checkpoint-1.1`**.
+   now contains `Fac.java` in one of its subdirectories, **then tag it as `checkpoint-1.1`**.
   
 ![CP1.1](https://img.shields.io/badge/Finished%20Checkpoint-1%2E1-success?style=for-the-badge)
 
@@ -217,12 +217,35 @@ command depends on your present working directory), then please note that contex
     
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
-   now contains `Fib.java` in one of its subdirectories.
-   
-1. **Stage and commit all the work that you have done so far, then tag it as `checkpoint-1.1`** 
+   now contains `Fib.java` in one of its subdirectories, **then tag it as `checkpoint-2.1`**.
+  
+![CP2.1](https://img.shields.io/badge/Finished%20Checkpoint-2%2E1-success?style=for-the-badge)
 
-
+1. The `fibonacci` method that we provided is interesting because each call to `fibonacci` 
+   results in it calling itself twice with different parameters. Add the following multi-line 
+   comment to the end of `Fib.java`, then use it to fill in answers for the questions below.
    
+   ```java
+   /* CHECKPOINT 2.1
+    *   i. INSERT ANSWER HERE
+    *  ii. INSERT ANSWER HERE
+    * iii. INSERT ANSWER HERE
+    */
+    ```
+    
+    1. Using `CallStackApp`, invoke the `fibonacci` method with `5` supplied for `n`. Scroll
+       through the timeline and identify the first frame that is returned to but not immediately
+       popped in the next step in the timeline. What is the name of that frame?
+       
+    1. ...
+    
+    1. ...
+    
+1. After you've included your answers in the code, save and commit your changes, 
+   **then tag it as `checkpoint-2.2`**.
+
+![CP2.2](https://img.shields.io/badge/Finished%20Checkpoint-2%2E2-success?style=for-the-badge)   
+
 **CHECKPOINT**
 
 1. Create a new Java file in your Maven project. The FQN for the file should be `cs1302.ce24.RecursionPractice`.
