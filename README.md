@@ -148,11 +148,13 @@ command depends on your present working directory), then please note that contex
 1. Make sure you are logged into Nike with X-forwarding enabled. If not, logout and log back in
    appropriately. 
    
-1. Run the `CallStackApp` GUI so that we can 
+1. Run the `CallStackApp` program to explore some call stacks using a GUI: 
 
-   ```java
-   pub
    ```
+   $ CallStackApp
+   ```
+   
+   ![Screenshot](callstack_app.png)
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
