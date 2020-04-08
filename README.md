@@ -78,7 +78,7 @@ command depends on your present working directory), then please note that contex
    public class Fac {
 
        public static void main(String[] args) {
-           System.out.println(factorial(5));
+           System.out.println(factorial(3));
        } // main
 
        /**
@@ -101,6 +101,14 @@ command depends on your present working directory), then please note that contex
    now contains `Facjava` in one of its subdirectories, **then tag it as `checkpoint-1.1`**.
   
 ![CP1.1](https://img.shields.io/badge/Checkpoint-1%2E1-success?style=for-the-badge)
+
+1. Let's consider the actual execution of `factorial(3)`. The diagram below depicts how the 
+   call stack changes immediately after each invocation and return of the recursive method 
+   calls in an execution of `factorial(3)`. Here, we redraw the call stack after each 
+   recusive call is added (pushed ↓) and removed (popped ↑) from the call stack during 
+   execution. The stack frames include local variables and the return value (using `?` if unknown).
+
+   ![`factorial(3)` pushes](callstack_factorial3_down.png)
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
