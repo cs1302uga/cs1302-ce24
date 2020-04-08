@@ -154,7 +154,37 @@ command depends on your present working directory), then please note that contex
    $ CallStackApp
    ```
    
-   ![Screenshot](callstack_app.PNG)
+   ![CallStackApp Screenshot](callstack_app.PNG)
+   
+1. Add the following multi-line comment to the end of `Fac.java`, then use it to fill in answers
+   for the questions below.
+   
+   ```java
+   /* CHECKPOINT 1.3
+    *   i. INSERT ANSWER HERE
+    *  ii. INSERT ANSWER HERE
+    * iii. INSERT ANSWER HERE
+    */
+   ```
+   
+   1. Using `CallStackApp`, invoke the `factorial` method with `3` supplied for `n`. Do the call stack
+      depcitions in the app line up with the diagram presented for `factorial(3)` earler in this exercise?
+      
+   2. If you exclude the calling method (which is omitted in the output of `CallStackApp`), what is the
+      maximum number of `factorial` frames that need to fit on the call stack at any point in time to
+      compute `factorial(9)`? 
+      
+   3. Using `CallStackApp`, try to invoke the `factorial` method with `10` supplied for `n`. The program
+      prevents you from doing that because the author imposed an arbitrary upper limit on the input
+      parameter. In your own `Fac.java` file, try different, increasing values for `n` until you find
+      one that causes the program to crash when run. When the program crashes it's because the call stack is 
+      not big enough to support the maximum number of call frames needed to perform the recursion. 
+      What is the name of the exception that crashed the program?
+
+1. After you've included your answers in the code, save and commit your changes, 
+   **then tag it as `checkpoint-1.3`**.
+  
+![CP1.2](https://img.shields.io/badge/Finished%20Checkpoint-1%2E2-success?style=for-the-badge)   
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
