@@ -372,6 +372,10 @@ command depends on your present working directory), then please note that contex
    
    ![`splitString` tree example](splitString_tree.png)
    
+   <!--
+   http://mshang.ca/syntree/?i=%5BsplitString(%22Hello_1302_students!%22%2C%22_%22)%20%5BsplitString(%221302_students!%22%2C%22_%22)%20%5BsplitString(%22students!%22%2C%22_%22)%20%0A%5BsplitString(%22%22%2C%22_%22)%20return%20new%20LinkedList%3C%3E()%5D%20%5Blist.add(0%2C%22students%22)%5D%5D%20list.add(0%2C%221302%22)%5D%20%5Blist.add(0%2C%22Hello%22)%5D
+   //-->
+   
    We say _recursion-like_ because this tree shows more than just recursive calls. It provides a big
    hint about the base case formulation, and it illustrates that some work needs to be done in the
    recursive case between the recursive call and the return statement.
