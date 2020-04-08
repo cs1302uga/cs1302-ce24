@@ -342,7 +342,7 @@ command depends on your present working directory), then please note that contex
    following method useful to include for testing purposes:
    ```
    public static void printList(List<String> list) {
-       String output = list.stream().collect(Collectors.joining(",", "[", "]"));
+       String output = list.stream().collect(Collectors.joining("\", \"", "[\"", "\"]"));
        System.out.println(output);
    } // printList
    ```
