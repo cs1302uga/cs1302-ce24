@@ -178,7 +178,7 @@ command depends on your present working directory), then please note that contex
       prevents you from doing that because the author imposed an arbitrary upper limit on the input
       parameter. In your own `Fac.java` file, try different, increasing values for `n` until you find
       one that causes the program to crash when run. When the program crashes it's because the call stack is 
-      not big enough to support the maximum number of call frames needed to perform the recursion. 
+      not big enough to support the maximum number of frames needed to perform the recursion. 
       What is the name of the exception that crashed the program?
 
 1. After you've included your answers in the code, save and commit your changes, 
