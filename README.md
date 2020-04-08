@@ -321,7 +321,7 @@ command depends on your present working directory), then please note that contex
     */
    public static List<String> splitString(String str, String delim)
    ```
-   where `List<E>` is [`java.util.List<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/List.html),
+   where `List<E>` is [`java.util.List<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/List.html),
    which has known impementations like [`ArrayList<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
    and [`LinkedList<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html).
 
@@ -337,11 +337,23 @@ command depends on your present working directory), then please note that contex
    |`splitString("GNU's not Unix", "'")`            | `["GNU", "s not Unix"]`                       |
    |`splitString("Recursion is fun!", "9")`         | `["Recursion is fun!"]`                       |
    
-1. Execute your code on various input strings to verify that it is working properly.
+1. Add a `main` method to execute your `splitString` method with various input strings to verify that 
+   it works properly. At the very least, please check it with the examples above. You may find the
+   following method useful to include for testing purposes:
+   ```
+   public static void printList(List<String> list) {
+       String output = list.stream().collect(Collectors.joining(",", "[", "]"));
+       System.out.println(output);
+   } // printList
+   ```
+   where `Collectors` is [`java.util.stream.Collectors`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html).
 
-1. Save and commit your changes.
+1. After you've confirmed that your `splitString` method works correctly, add and commit your `src` 
+   directory which now contains `SplitString.java` in one of its subdirectories, 
+   **then tag it as `checkpoint-4`**. Please ensure you pass `checkstyle`.
    
-**CHECKPOINT**
+![CP4](https://img.shields.io/badge/Finished%20Checkpoint-4-success?style=for-the-badge)
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
