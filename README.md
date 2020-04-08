@@ -246,6 +246,11 @@ command depends on your present working directory), then please note that contex
 
 ![CP2.2](https://img.shields.io/badge/Finished%20Checkpoint-2%2E2-success?style=for-the-badge)   
 
+1. Another way to visualize recursion is using a digram called a **recursion tree**. Here
+   is the recursion tree for `fibonacci(5)`.
+   
+   ![`fibonacci(5)` recursion tree](callstack_fibonacci5_tree.png)
+
 **CHECKPOINT**
 
 1. Create a new Java file in your Maven project. The FQN for the file should be `cs1302.ce24.RecursionPractice`.
