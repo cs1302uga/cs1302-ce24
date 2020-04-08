@@ -123,12 +123,16 @@ command depends on your present working directory), then please note that contex
        //   i. INSERT ANSWER HERE
        //  ii. INSERT ANSWER HERE
        // iii. INSERT ANSWER HERE
-       Thread.currentThread().dumpStack();
+       Thread.currentThread().dumpStack(); // 
        return 1;
    } // if
    ```
    
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
+   Here is the expected output:
+   ```
+   BRAD HERE PLS
+   ```
    Once your have observed the program output, please answer the following questions in the
    comments you pasted into your code:
    
