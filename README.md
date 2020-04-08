@@ -18,7 +18,7 @@ and stacks in solving typical problems.
 
 ## References and Prerequisites
 
-* [`CSCI 1302 Recursion Tutorial`](https://github.com/cs1302uga/cs1302-tutorials/blob/master/recursion.md)
+* [CSCI 1302 Recursion Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/recursion.md)
 
 ## Questions
 
