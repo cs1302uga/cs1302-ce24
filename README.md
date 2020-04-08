@@ -196,10 +196,13 @@ command depends on your present working directory), then please note that contex
       
    3. Using `CallStackApp`, try to invoke the `factorial` method with `10` supplied for `n`. The program
       prevents you from doing that because the author imposed an arbitrary upper limit on the input
-      parameter. In your own `Fac.java` file, try different, increasing values for `n` until you find
-      one that causes the program to crash when run. When the program crashes it's because the call stack is 
+      parameter. In your own `Fac.java` file, comment out the line of code that calls `dumpStack()`,
+      then try calling `factorial` with a large `n` value in an attempt to make the program crash 
+      when run (e.g., `20000` or bigger).
+      When the program crashes, it's because the call stack is 
       not big enough to support the maximum number of frames needed to perform the recursion. 
-      What is the name of the exception that crashed the program?
+      **What is the name of the exception that crashed the program?** Hint: Although the exception name is
+      at the beginning of the stack trace, Maven repeats the exception name towards the end of its output.
 
 1. After you've included your answers in the code, save and commit your changes.
    
