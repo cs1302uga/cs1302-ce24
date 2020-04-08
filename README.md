@@ -100,7 +100,7 @@ command depends on your present working directory), then please note that contex
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
    now contains `Facjava` in one of its subdirectories, **then tag it as `checkpoint-1.1`**.
   
-![CP1.1](https://img.shields.io/badge/Finished-Checkpoint-1%2E1-success?style=for-the-badge)
+![CP1.1](https://img.shields.io/badge/Finished%20Checkpoint-1%2E1-success?style=for-the-badge)
 
 1. Let's consider the actual execution of `factorial(3)`. The diagram below depicts how the 
    call stack changes immediately after each invocation and return of the recursive method 
@@ -143,7 +143,7 @@ command depends on your present working directory), then please note that contex
 1. After you've included your answers in the code, save and commit your changes, 
    **then tag it as `checkpoint-1.2`**.
   
-![CP1.2](https://img.shields.io/badge/Finished-Checkpoint-1%2E2-success?style=for-the-badge)   
+![CP1.2](https://img.shields.io/badge/Finished%20Checkpoint-1%2E2-success?style=for-the-badge)   
 
 1. Now that you know how to 
 
