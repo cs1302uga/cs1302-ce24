@@ -311,11 +311,16 @@ command depends on your present working directory), then please note that contex
 
 1. Create a `cs1302.ce24.SplitString` class with a `splitString` method matching the following
    signature:
-
    ```java
+   /** 
+    * Returns a list of tokens from {@code str} based on the delimiter 
+    * {@code delim}.
+    * @param str   input string
+    * @param delim delimiter / separator
+    * @return list of tokens
+    */
    public static List<String> splitString(String str, String delim)
    ```
-   
    where `List<E>` is [`java.util.List<T>`](https://docs.oracle.com/javase/8/docs/api/java/util/List.html),
    which has known impementations like [`ArrayList<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
    and [`LinkedList<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html).
