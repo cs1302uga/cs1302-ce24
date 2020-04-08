@@ -328,7 +328,7 @@ command depends on your present working directory), then please note that contex
 
     1. Write a `boolean` expression using `str` that is `true` if, and only if `downUp` is in a **base case**.
     
-    2. Write a `boolean` expression using `str` that is `true` if, and only if `downUp` is in a **recursive case*.
+    2. Write a `boolean` expression using `str` that is `true` if, and only if `downUp` is in a **recursive case**.
     
     3. If you exclude the calling method, what is the maximum number of `downUp` 
        frames that need to fit on the call stack at any point in time to execute
