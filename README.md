@@ -332,10 +332,14 @@ command depends on your present working directory), then please note that contex
    
    | Call                                           | Returned List                                 |
    |------------------------------------------------|-----------------------------------------------|
-   |`splitString("Hello 1302 students!", " ")`      | `["Hello", "1302", "Students!"]`              |
+   |`splitString("Hello_1302_students!", "_")`      | `["Hello", "1302", "Students!"]`              |
    |`splitString("1234.1,12345,23213,12,1,1", ",")` | `["1234.1", "12345", "23213", "12", "1", "1"]`|
    |`splitString("GNU's not Unix", "'")`            | `["GNU", "s not Unix"]`                       |
    |`splitString("Recursion is fun!", "9")`         | `["Recursion is fun!"]`                       |
+   
+   Here is a recursion-like tree for `splitString("Hello_1302_students!", "_")` that you might find useful:
+   
+   ![`splitString` tree example](splitString_tree.png)
    
 1. Add a `main` method to execute your `splitString` method with various input strings to verify that 
    it works properly. At the very least, please check it with the examples above. You may find the
