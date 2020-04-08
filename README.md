@@ -111,6 +111,39 @@ command depends on your present working directory), then please note that contex
    ![`factorial(3)` pushes](callstack_factorial3_down.png)
    
    ![`factorial(3)` pops](callstack_factorial3_up.png)
+   
+1. With the above diagram in mind, modify `Fib.java` to  print out the call stack when the
+   `factorial` method reaches the base case. Replace the if-statement with the following:
+   
+   ```java
+   if ((n == 0) || (n == 1)) {
+       // a. INSERT ANSWER HERE
+       // b. INSERT ANSWER HERE
+       // c. INSERT ANSWER HERE
+       Thread.currentThread().dumpStack();
+       return 1;
+   } // if
+   ```
+   
+1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
+   Once your have observed the program output, please answer the following questions in the
+   comments you pasted into your code:
+   
+   1. Based on the program output, does `dumpStack()` print frames in the order they are
+      pushed onto the call stack or in the reverse order? Please write "in order" or "reverse order".
+   
+   1. There are 8 depictions (i.e., 1 -- 8) of the call stack in the diagrams provided 
+      earlier for `factorial(3)`. Which depiction matches up with the program output if
+      `dumpStack` is ignored?
+      
+   1. In the diagrams provided earlier for `factorial(3)`, we labeled one frame as the
+      "calling method". What is the name of the calling method based on the program
+      output.
+      
+1. After you've included your answers in the code, save and commit your changes, 
+   **then tag it as `checkpoint-1.2`**.
+  
+![CP1.1](https://img.shields.io/badge/Checkpoint-1%2E2-success?style=for-the-badge)   
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
@@ -147,65 +180,7 @@ command depends on your present working directory), then please note that contex
    
 1. **Stage and commit all the work that you have done so far, then tag it as `checkpoint-1.1`** 
 
-1. Read and understand the two approaches below for diagramming the changes to the call stack
-   as a recursive method executes.
-      * The diagram below depicts how the call stack changes immediately after each invocation
-        and return of the recursive method calls in an execution of `fibonacci(2)`. Here, we 
-        redraw the call stack after each recusive call is added (pushed) and removed (popped) from
-        the call stack during execution. The stack frames include local variables and the return 
-        value (using `?` if unknown). 
 
-        ```
-         immediately             immediately             immediately             immediately
-         after calling           after calling           after returning         after calling 
-         fibonacci(2)            fibonacci(0)            fibonacci(0)            fibonacci(1)
-        |------------------|    |------------------|    |------------------|    |------------------|
-        | [calling method] | => | [calling method] | => | [calling method] | => | [calling method] | =>
-        |------------------|    |------------------|    |------------------|    |------------------|   
-        | [fibonacci(2)]   |    | [fibonacci(2)]   |    | [fibonacci(2)]   |    | [fibonacci(2)]   |   
-        | n = 2            |    | n = 2            |    | n = 2            |    | n = 2            |   
-        | return ? +       |    | return ? + ?     |    | return 1 + ?     |    | return 1 + ?     |   
-        |------------------|    |------------------|    |------------------|    |------------------|   
-                                | [fibonacci(0)]   |                            | [fibonacci(1)]   |  
-                                | return  1        |                            | return 1         |  
-                                |------------------|                            |------------------|  
-        ```
-        ```
-         immediately             immediately        
-         after returning         after returning
-         fibonacci(1)            fibonacci(2)       
-        |------------------|    |------------------|
-        | [calling method] | => | [calling method] |
-        |------------------|    |------------------|
-        | [fibonacci(2)]   |     Now has value 2
-        | n = 2            |    
-        | return 1 + 1     |    
-        |------------------|                            
-        ```
-    * For larger inputs, redrawing the call stack whenever a frame is added or removed becomes time consuming
-      and error-prone. An alternative is to only redraw the call stack when a frame is removed (popped). In other
-      words, we add frames to the existing picture and redraw only when a method returns. The example below 
-      demonstrates this approach. 
-    
-        ```
-         immediately             immediately             immediately             immediately
-         after calling           after returning         fter returning          after returning
-         fibonacci(2)            fibonacci(0)            fibonacci(1)            fibonacci(2)
-         and fibonacci(0)        and calling 
-                                 fibonacci(1)
-        |------------------|    |------------------|    |------------------|    |------------------|
-        | [calling method] | => | [calling method] | => | [calling method] | => | [calling method] |
-        |------------------|    |------------------|    |------------------|    |------------------|   
-        | [fibonacci(2)]   |    | [fibonacci(2)]   |    | [fibonacci(2)]   |     Now has value 2
-        | n = 2            |    | n = 2            |    | n = 2            | 
-        | return ? + ?     |    | return 1 + ?     |    | return 1 + 1     | 
-        |------------------|    |------------------|    |------------------| 
-        | [fibonacci(0)]   |    | [fibonacci(1)]   |  
-        | return  1        |    | return 1         |  
-        |------------------|    |------------------|  
-        ```
-
-1. Using the second approach, diagram the changes to the call stack as `fibonacci(4)` executes. 
    
 **CHECKPOINT**
 
