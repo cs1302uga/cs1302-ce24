@@ -98,7 +98,7 @@ command depends on your present working directory), then please note that contex
     
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
-   now contains `Facjava` in one of its subdirectories, **then tag it as `checkpoint-1.1`.
+   now contains `Facjava` in one of its subdirectories, **then tag it as `checkpoint-1.1`**.
   
 ![CP1.1](https://img.shields.io/badge/Checkpoint-1%2E1-success?style=for-the-badge)
 
