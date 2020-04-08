@@ -67,6 +67,41 @@ command depends on your present working directory), then please note that contex
    
 ## Exercise Steps
 
+1. Create a `cs1302.ce24.Fac` class based on code below that provides a
+   recursive [Factorial](https://mathworld.wolfram.com/Factorial.html) method. You may need to add
+   a package statement and necessary imports.
+   
+   ```java
+   /**
+    * Factorial convenience class.
+    */
+   public class Fac {
+
+       public static void main(String[] args) {
+           System.out.println(factorial(5));
+       } // main
+
+       /**
+        * Returns the Factorial of {@code n}.
+        * @param n index
+        * @return Factorial of {@code n}
+        */
+       public static int factorial(int n) {
+           if ((n == 0) || (n == 1)) {
+               return 1;
+           } // if
+           return n * factorial(n - 1);
+       } // fibonacci
+    
+   } // Fac
+   ```
+    
+1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
+   After you've confirmed that it compiles and runs, add and commit your `src` directory which
+   now contains `Facjava` in one of its subdirectories, **then tag it as `checkpoint-1.1`.
+  
+![CP](https://img.shields.io/badge/Checkpoint-1.1-success?style=for-the-badge)
+
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
    a package statement and necessary imports.
@@ -99,6 +134,8 @@ command depends on your present working directory), then please note that contex
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
    now contains `Fib.java` in one of its subdirectories.
+   
+1. **Stage and commit all the work that you have done so far, then tag it as `checkpoint-1.1`** 
 
 1. Read and understand the two approaches below for diagramming the changes to the call stack
    as a recursive method executes.
