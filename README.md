@@ -109,6 +109,8 @@ command depends on your present working directory), then please note that contex
    execution. The stack frames include local variables and the return value (using `?` if unknown).
 
    ![`factorial(3)` pushes](callstack_factorial3_down.png)
+   
+   ![`factorial(3)` pops](callstack_factorial3_up.png)
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
