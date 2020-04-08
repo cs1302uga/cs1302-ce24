@@ -99,6 +99,7 @@ command depends on your present working directory), then please note that contex
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
    now contains `Fac.java` in one of its subdirectories, **then tag it as `checkpoint-1.1`**.
+   Please ensure you pass `checkstyle`.
   
 ![CP1.1](https://img.shields.io/badge/Finished%20Checkpoint-1%2E1-success?style=for-the-badge)
 
@@ -141,7 +142,7 @@ command depends on your present working directory), then please note that contex
       output.
       
 1. After you've included your answers in the code, save and commit your changes, 
-   **then tag it as `checkpoint-1.2`**.
+   **then tag it as `checkpoint-1.2`**. Please ensure you pass `checkstyle`.
   
 ![CP1.2](https://img.shields.io/badge/Finished%20Checkpoint-1%2E2-success?style=for-the-badge)   
 
@@ -182,7 +183,7 @@ command depends on your present working directory), then please note that contex
       What is the name of the exception that crashed the program?
 
 1. After you've included your answers in the code, save and commit your changes, 
-   **then tag it as `checkpoint-1.3`**.
+   **then tag it as `checkpoint-1.3`**. Please ensure you pass `checkstyle`.
   
 ![CP1.3](https://img.shields.io/badge/Finished%20Checkpoint-1%2E3-success?style=for-the-badge)   
 
@@ -218,6 +219,7 @@ command depends on your present working directory), then please note that contex
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
    now contains `Fib.java` in one of its subdirectories, **then tag it as `checkpoint-2.1`**.
+   Please ensure you pass `checkstyle`.
   
 ![CP2.1](https://img.shields.io/badge/Finished%20Checkpoint-2%2E1-success?style=for-the-badge)
 
@@ -230,6 +232,7 @@ command depends on your present working directory), then please note that contex
     *   i. INSERT ANSWER HERE
     *  ii. INSERT ANSWER HERE
     * iii. INSERT ANSWER HERE
+    *  iv. INSERT ANSWER HERE
     */
     ```
     
@@ -249,17 +252,34 @@ command depends on your present working directory), then please note that contex
        likewise, whenever a frame is popped (↑) traverse upward back to its caller. How many times
        do you visit `fibonacci(5)` when performing your traversal (including the initial visit)?
     
-    1. ...
+    1. Hopefully you noticed that some work is repeated by different frames. In our visualizations,
+       this occurs when two frames have the same name. Based on the recursion tree, what is the name
+       of the first frame that repeats work (based on traversal order)?
+       
+    1. How many times are based cases executed during the recursion for `factorial(5)`?
     
-1. After you've included your answers in the code, save and commit your changes, 
-   **then tag it as `checkpoint-2.2`**.
+1. After you've included your answers in the code, save and commit your changes,
+   **then tag it as `checkpoint-2.2`**. Please ensure you pass `checkstyle`.
 
 ![CP2.2](https://img.shields.io/badge/Finished%20Checkpoint-2%2E2-success?style=for-the-badge)   
 
-1. Another way to visualize recursion is using a digram called a **recursion tree**. Here
-   is the recursion tree for `fibonacci(5)`.
+1. Create a `cs1302.ce24.DownUp` class based on code provided in `CallStackApp`. You may need to add
+   a package statement and necessary imports. 
    
-   ![`fibonacci(5)` recursion tree](callstack_fibonacci5_tree.png)
+1. Add a `main` method that calls `downUp("Dawgs")`.
+
+1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
+
+1. Based on the program output, document the `downUp` method using Javadoc so that other
+   people who want to use the method will understand what it's supposed to do. Your description
+   should not narrate the code; instead it should describe the output based on the method's 
+   input.
+   
+1. After you've finished documenting the code, add and commit your `src` directory which
+   now contains `DownUp.java` in one of its subdirectories, **then tag it as `checkpoint-3.1`**.
+   Please ensure you pass `checkstyle`.
+
+![CP3.1](https://img.shields.io/badge/Finished%20Checkpoint-3%2E1-success?style=for-the-badge)  
 
 **CHECKPOINT**
 
