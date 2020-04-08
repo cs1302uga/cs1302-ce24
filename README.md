@@ -98,8 +98,10 @@ command depends on your present working directory), then please note that contex
     
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
-   now contains `Fac.java` in one of its subdirectories, **then tag it as `checkpoint-1.1`**.
-   Please ensure you pass `checkstyle`.
+   now contains `Fac.java` in one of its subdirectories.
+   
+1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-1.1`**.
+
   
 ![CP1.1](https://img.shields.io/badge/Finished%20Checkpoint-1%2E1-success?style=for-the-badge)
 
@@ -141,8 +143,9 @@ command depends on your present working directory), then please note that contex
       "calling method". What is the name of the calling method based on the program
       output.
       
-1. After you've included your answers in the code, save and commit your changes, 
-   **then tag it as `checkpoint-1.2`**. Please ensure you pass `checkstyle`.
+1. After you've included your answers in the code, save and commit your changes.
+   
+1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-1.2`**.
   
 ![CP1.2](https://img.shields.io/badge/Finished%20Checkpoint-1%2E2-success?style=for-the-badge)   
 
@@ -182,8 +185,9 @@ command depends on your present working directory), then please note that contex
       not big enough to support the maximum number of frames needed to perform the recursion. 
       What is the name of the exception that crashed the program?
 
-1. After you've included your answers in the code, save and commit your changes, 
-   **then tag it as `checkpoint-1.3`**. Please ensure you pass `checkstyle`.
+1. After you've included your answers in the code, save and commit your changes.
+   
+1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-1.3`**.
   
 ![CP1.3](https://img.shields.io/badge/Finished%20Checkpoint-1%2E3-success?style=for-the-badge)   
 
@@ -218,8 +222,9 @@ command depends on your present working directory), then please note that contex
     
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
-   now contains `Fib.java` in one of its subdirectories, **then tag it as `checkpoint-2.1`**.
-   Please ensure you pass `checkstyle`.
+   now contains `Fib.java` in one of its subdirectories.
+   
+1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-2.1`**.
   
 ![CP2.1](https://img.shields.io/badge/Finished%20Checkpoint-2%2E1-success?style=for-the-badge)
 
@@ -258,8 +263,9 @@ command depends on your present working directory), then please note that contex
        
     1. How many times are based cases executed during the recursion for `factorial(5)`?
     
-1. After you've included your answers in the code, save and commit your changes,
-   **then tag it as `checkpoint-2.2`**. Please ensure you pass `checkstyle`.
+1. After you've included your answers in the code, save and commit your changes.
+   
+1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-2.2`**.
 
 ![CP2.2](https://img.shields.io/badge/Finished%20Checkpoint-2%2E2-success?style=for-the-badge)   
 
@@ -278,8 +284,9 @@ command depends on your present working directory), then please note that contex
    overall output.
    
 1. After you've finished documenting the code, add and commit your `src` directory which
-   now contains `DownUp.java` in one of its subdirectories, **then tag it as `checkpoint-3.1`**.
-   Please ensure you pass `checkstyle`.
+   now contains `DownUp.java` in one of its subdirectories.
+   
+1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-3.1`**.
 
 ![CP3.1](https://img.shields.io/badge/Finished%20Checkpoint-3%2E1-success?style=for-the-badge)  
 
@@ -304,8 +311,9 @@ command depends on your present working directory), then please note that contex
        frames that need to fit on the call stack at any point in time to execute
        `downUp("Dawgs")`? 
 
-1. After you've included your answers in the code, save and commit your changes,
-   **then tag it as `checkpoint-3.2`**. Please ensure you pass `checkstyle`.
+1. After you've included your answers in the code, save and commit your changes.
+   
+1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-3.2`**.
 
 ![CP3.2](https://img.shields.io/badge/Finished%20Checkpoint-3%2E2-success?style=for-the-badge)   
 
@@ -357,8 +365,9 @@ command depends on your present working directory), then please note that contex
    where `Collectors` is [`java.util.stream.Collectors`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html).
 
 1. After you've confirmed that your `splitString` method works correctly, add and commit your `src` 
-   directory which now contains `SplitString.java` in one of its subdirectories, 
-   **then tag it as `checkpoint-4`**. Please ensure you pass `checkstyle`.
+   directory which now contains `SplitString.java` in one of its subdirectories.
+   
+1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-4`**.
    
 ![CP4](https://img.shields.io/badge/Finished%20Checkpoint-4-success?style=for-the-badge)
 
