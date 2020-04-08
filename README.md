@@ -112,14 +112,14 @@ command depends on your present working directory), then please note that contex
    
    ![`factorial(3)` pops](callstack_factorial3_up.png)
    
-1. With the above diagram in mind, modify `Fib.java` to  print out the call stack when the
+1. With the above diagram in mind, modify `Fac.java` to  print out the call stack when the
    `factorial` method reaches the base case. Replace the if-statement with the following:
    
    ```java
    if ((n == 0) || (n == 1)) {
-       // a. INSERT ANSWER HERE
-       // b. INSERT ANSWER HERE
-       // c. INSERT ANSWER HERE
+       //   i. INSERT ANSWER HERE
+       //  ii. INSERT ANSWER HERE
+       // iii. INSERT ANSWER HERE
        Thread.currentThread().dumpStack();
        return 1;
    } // if
@@ -134,7 +134,7 @@ command depends on your present working directory), then please note that contex
    
    1. There are 8 depictions (i.e., 1 -- 8) of the call stack in the diagrams provided 
       earlier for `factorial(3)`. Which depiction matches up with the program output if
-      `dumpStack` is ignored?
+      `dumpStack()` is ignored?
       
    1. In the diagrams provided earlier for `factorial(3)`, we labeled one frame as the
       "calling method". What is the name of the calling method based on the program
@@ -145,7 +145,10 @@ command depends on your present working directory), then please note that contex
   
 ![CP1.2](https://img.shields.io/badge/Finished%20Checkpoint-1%2E2-success?style=for-the-badge)   
 
-1. Now that you know how to 
+1. Make sure you are logged into Nike with X-forwarding enabled. If not, logout and log back in
+   appropriately. 
+   
+1. Run the `CallStackApp` GUI so that we can 
 
    ```java
    pub
