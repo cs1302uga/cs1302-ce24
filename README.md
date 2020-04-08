@@ -273,10 +273,9 @@ command depends on your present working directory), then please note that contex
 1. Based on the program output, document the `downUp` method using Javadoc so that other
    people who want to use the method will understand what it's supposed to do. Your description
    should not narrate the code; instead it should describe the output based on the method's 
-   input.
-   
-   * Feel free to use `CallStackApp` to rapidly try different inputs so that you can get
-     a better idea of what the method is doing.
+   input. Feel free to use `CallStackApp` to rapidly try different inputs so that you can get
+   a better idea of what the method is doing -- the final column in the timeline shows the
+   overall output.
    
 1. After you've finished documenting the code, add and commit your `src` directory which
    now contains `DownUp.java` in one of its subdirectories, **then tag it as `checkpoint-3.1`**.
@@ -284,7 +283,7 @@ command depends on your present working directory), then please note that contex
 
 ![CP3.1](https://img.shields.io/badge/Finished%20Checkpoint-3%2E1-success?style=for-the-badge)  
 
-1. The `downUp` method that we provided is interesting because each call to `fibonacci`
+1. The `downUp` method that we provided is interesting because each call to `downUp`
    performs a `println` before and after its recursive call (i.e., in its recursive case). 
    Add the following multi-line comment to the end of `DownUp.java`, then use it to fill 
    in answers for the questions below.
@@ -310,43 +309,10 @@ command depends on your present working directory), then please note that contex
 
 ![CP3.2](https://img.shields.io/badge/Finished%20Checkpoint-3%2E2-success?style=for-the-badge)   
 
-1. Create a new Java file in your Maven project. The FQN for the file should be `cs1302.ce24.RecursionPractice`.
-1. Add the class declaration and appropriate package statements at the top of `RecursionPractice.java`.
-1. Consider the output below for a call to a method `downUp("Dawgs")`. We will write the code to do this eventually
-   but, first, **in your notes**:
-   
-   * Identify the base case(s). Give an example.
-   
-   * Identify the recursive case(s).
-   
-   * Draw the recursion tree for `downUp("Dawgs")`.
-   
-   ```
-   Dawgs
-   Dawg
-   Daw
-   Da
-   D
-   Da
-   Daw
-   Dawg
-   Dawgs
-   ```
+1. Create a `cs1302.ce24.SplitString` class with a `splitString` method matching the following
+   signature:
 
-**CHECKPOINT**
-
-1. In `RecursionPractice`, create the static method `downUp` that takes a single `String` reference as
-   input.
-   
-1. Execute your code on various input strings to verify that it is working properly.
-
-1. Save and commit your changes.
-
-**CHECKPOINT**
-
-1. Create a new method in `RecursionPractice` called `splitString` with the following signature:
-
-   ```
+   ```java
    public static List<String> splitString(String str, String delim)
    ```
    
