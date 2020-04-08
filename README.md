@@ -129,21 +129,17 @@ command depends on your present working directory), then please note that contex
    ```
    
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
-   Here is the expected output:
+   The `dumpStack()` method manually throws an exception and prints a stack trace, which 
+   is Java's way of showing you the call stack. Here is the expected output:
    
    ```
    java.lang.Exception: Stack trace
-	at java.lang.Thread.dumpStack(Thread.java:1336)
-	at cs1302.ce24.Fac.factorial(Fac.java:22)
-	at cs1302.ce24.Fac.factorial(Fac.java:25)
-	at cs1302.ce24.Fac.factorial(Fac.java:25)
-	at cs1302.ce24.Fac.main(Fac.java:9)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
-	at java.lang.Thread.run(Thread.java:748)
+       at java.lang.Thread.dumpStack(Thread.java:1336)
+       at cs1302.ce24.Fac.factorial(Fac.java:22)
+       at cs1302.ce24.Fac.factorial(Fac.java:25)
+       at cs1302.ce24.Fac.factorial(Fac.java:25)
+       at cs1302.ce24.Fac.main(Fac.java:9)
+       [...] Maven-related portion of the call stack.
    ```
    
    Once your have observed the program output, please answer the following questions in the
