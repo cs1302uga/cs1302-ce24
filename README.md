@@ -154,7 +154,7 @@ command depends on your present working directory), then please note that contex
    $ CallStackApp
    ```
    
-   ![Screenshot](callstack_app.png)
+   ![Screenshot](callstack_app.PNG)
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
