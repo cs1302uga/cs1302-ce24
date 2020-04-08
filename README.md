@@ -267,7 +267,7 @@ command depends on your present working directory), then please note that contex
     1. Another way to visualize recursion is using a digram called a **recursion tree**. Here
        is the recursion tree for `fibonacci(5)`.
    
-       ![`fibonacci(5)` recursion tree](callstack_fibonacci5_tree.png)
+       ![`fibonacci(5)` recursion tree](callstack_fibonacci5_tree_fixed.png)
        
        This recursion tree shows all the frames that execute for `fibonacci(5)`, which may have
        been hard to see if you're only inspecting the call stack itself over time. Using the 
@@ -280,7 +280,7 @@ command depends on your present working directory), then please note that contex
        this occurs when two frames have the same name. Based on the recursion tree, what is the name
        of the first frame that repeats work (based on traversal order)?
        
-    1. How many times are based cases executed during the recursion for `factorial(5)`?
+    1. How many times are base cases executed during the recursion for `factorial(5)`?
     
 1. After you've included your answers in the code, save and commit your changes.
    
