@@ -68,8 +68,8 @@ command depends on your present working directory), then please note that contex
 ## Exercise Steps
 
 1. Create a `cs1302.ce24.Fac` class based on code below that provides a
-   recursive [Factorial](https://mathworld.wolfram.com/Factorial.html) method. You may need to add
-   a package statement and necessary imports.
+   recursive [Factorial](https://mathworld.wolfram.com/Factorial.html) method. 
+   You may need to add a package statement and necessary imports.
    
    ```java
    /**
@@ -98,7 +98,7 @@ command depends on your present working directory), then please note that contex
     
 1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
    After you've confirmed that it compiles and runs, add and commit your `src` directory which
-   now contains `Facjava` in one of its subdirectories, **then tag it as `checkpoint-1.1`.
+   now contains `Facjava` in one of its subdirectories, **then tag it as `checkpoint-1.1`**.
   
 ![CP](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUxIiBoZWlnaHQ9IjI4Ij48ZyBzaGFwZS1yZW5kZXJpbmc9ImNyaXNwRWRnZXMiPjxwYXRoIGZpbGw9IiM1NTUiIGQ9Ik0wIDBoMTA4djI4SDB6Ii8+PHBhdGggZmlsbD0iIzRjMSIgZD0iTTEwOCAwaDQzdjI4SDEwOHoiLz48L2c+PGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zLFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTAwIj4gPHRleHQgeD0iNTQwIiB5PSIxNzUiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI4NDAiPkNIRUNLUE9JTlQ8L3RleHQ+PHRleHQgeD0iMTI5NSIgeT0iMTc1IiBmb250LXdlaWdodD0iYm9sZCIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjE5MCI+MS4xPC90ZXh0PjwvZz4gPC9zdmc+)
 
