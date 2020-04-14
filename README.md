@@ -109,9 +109,9 @@ command depends on your present working directory), then please note that contex
    recusive call is added (pushed ↓) and removed (popped ↑) from the call stack during 
    execution. The stack frames include local variables and the return value (using `?` if unknown).
 
-   ![`factorial(3)` pushes](callstack_factorial3_down.png)
+   ![`factorial(3)` pushes](callstack_factorial3_downv2.png)
    
-   ![`factorial(3)` pops](callstack_factorial3_up.png)
+   ![`factorial(3)` pops](callstack_factorial3_upv2.png)
    
 1. With the above diagram in mind, modify `Fac.java` to  print out the call stack when the
    `factorial` method reaches the base case. Replace the if-statement with the following,
