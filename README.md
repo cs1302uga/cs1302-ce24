@@ -148,7 +148,7 @@ command depends on your present working directory), then please note that contex
    1. Based on the program output, does `dumpStack()` print frames in the order they are
       pushed onto the call stack or in the reverse order? Please write "in order" or "reverse order".
    
-   1. There are 8 depictions (i.e., 1 -- 8) of the call stack in the diagrams provided 
+   1. There are 6 depictions (i.e., 1 -- 6) of the call stack in the diagrams provided 
       earlier for `factorial(3)`. Which depiction best matches up with the program output if
       the Maven-related output lines and the line of output containing `java.lang.Thread.dumpStack` 
       are ignored?
