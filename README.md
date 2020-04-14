@@ -441,7 +441,7 @@ command depends on your present working directory), then please note that contex
 
 <hr/>
 
-![CP4](https://img.shields.io/badge/Finished%20Checkpoint-4-success?style=for-the-badge)
+![CP4](https://img.shields.io/badge/Just%20Finished%20Checkpoint-4-success?style=for-the-badge)
 
 <hr/>
 
