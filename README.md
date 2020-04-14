@@ -65,6 +65,8 @@ command depends on your present working directory), then please note that contex
    
 ## Exercise Steps
 
+### Checkpoint 1.1 Steps
+
 1. Create a `cs1302.ce24.Fac` class based on code below that provides a
    recursive [Factorial](https://mathworld.wolfram.com/Factorial.html) method. You may need to add
    a package statement and necessary imports.
@@ -100,8 +102,13 @@ command depends on your present working directory), then please note that contex
    
 1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-1.1`**.
 
-  
-![CP1.1](https://img.shields.io/badge/Finished%20Checkpoint-1%2E1-success?style=for-the-badge)
+<hr/>
+
+![CP1.1](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1%2E1-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 1.2 Steps
 
 1. Let's consider the actual execution of `factorial(3)`. The diagram below depicts how the 
    call stack changes immediately after each invocation and return of the recursive method 
@@ -161,8 +168,14 @@ command depends on your present working directory), then please note that contex
 1. After you've included your answers in the code, save and commit your changes.
    
 1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-1.2`**.
-  
-![CP1.2](https://img.shields.io/badge/Finished%20Checkpoint-1%2E2-success?style=for-the-badge)   
+
+<hr/>
+
+![CP1.2](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1%2E2-success?style=for-the-badge)   
+
+<hr/>
+
+### Checkpoint 1.3 Steps
 
 1. Make sure you are logged into Nike with X-forwarding enabled. If not, logout and log back in
    appropriately. 
@@ -207,8 +220,14 @@ command depends on your present working directory), then please note that contex
 1. After you've included your answers in the code, save and commit your changes.
    
 1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-1.3`**.
-  
-![CP1.3](https://img.shields.io/badge/Finished%20Checkpoint-1%2E3-success?style=for-the-badge)   
+
+<hr/>
+
+![CP1.3](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1%2E3-success?style=for-the-badge)   
+
+<hr/>
+
+### Checkpoint 2.1 Steps
 
 1. Create a `cs1302.ce24.Fib` class based on code below that provides a
    recursive [Fibonacci](http://mathworld.wolfram.com/FibonacciNumber.html) method. You may need to add
@@ -244,8 +263,14 @@ command depends on your present working directory), then please note that contex
    now contains `Fib.java` in one of its subdirectories.
    
 1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-2.1`**.
-  
-![CP2.1](https://img.shields.io/badge/Finished%20Checkpoint-2%2E1-success?style=for-the-badge)
+
+<hr/>
+
+![CP2.1](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2%2E1-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 2.2 Steps
 
 1. The `fibonacci` method that we provided is interesting because each call to `fibonacci` 
    results in it calling itself twice with different parameters. Add the following multi-line 
@@ -290,7 +315,13 @@ command depends on your present working directory), then please note that contex
    
 1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-2.2`**.
 
-![CP2.2](https://img.shields.io/badge/Finished%20Checkpoint-2%2E2-success?style=for-the-badge)   
+<hr/>
+
+![CP2.2](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2%2E2-success?style=for-the-badge)   
+
+<hr/>
+
+### Checkpoint 3.1 Steps
 
 1. Create a `cs1302.ce24.DownUp` class based on code provided in `CallStackApp`. You may need to add
    a package statement and necessary imports. 
@@ -311,7 +342,13 @@ command depends on your present working directory), then please note that contex
    
 1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-3.1`**.
 
-![CP3.1](https://img.shields.io/badge/Finished%20Checkpoint-3%2E1-success?style=for-the-badge)  
+<hr/>
+
+![CP3.1](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3%2E1-success?style=for-the-badge)  
+
+<hr/>
+
+### Checkpoint 3.2 Steps
 
 1. The `downUp` method that we provided is interesting because each call to `downUp`
    performs a `println` before and after its recursive call (i.e., in its recursive case). 
@@ -338,7 +375,13 @@ command depends on your present working directory), then please note that contex
    
 1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-3.2`**.
 
-![CP3.2](https://img.shields.io/badge/Finished%20Checkpoint-3%2E2-success?style=for-the-badge)   
+<hr/>
+
+![CP3.2](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3%2E2-success?style=for-the-badge)   
+
+<hr/>
+
+### Checkpoint 4 Steps
 
 1. Create a `cs1302.ce24.SplitString` class with a `splitString` method matching the following
    signature:
@@ -395,8 +438,14 @@ command depends on your present working directory), then please note that contex
    directory which now contains `SplitString.java` in one of its subdirectories.
    
 1. Please ensure you pass `checkstyle`, recommit if needed, **and tag as `checkpoint-4`**.
-   
+
+<hr/>
+
 ![CP4](https://img.shields.io/badge/Finished%20Checkpoint-4-success?style=for-the-badge)
+
+<hr/>
+
+### Submission Steps
 
 **Each student needs to individually submit their own work.**
 
@@ -423,8 +472,10 @@ command depends on your present working directory), then please note that contex
    ```
    $ submit cs1302-ce24 cs1302a
    ```
-   
-![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
