@@ -114,14 +114,15 @@ command depends on your present working directory), then please note that contex
    ![`factorial(3)` pops](callstack_factorial3_up.png)
    
 1. With the above diagram in mind, modify `Fac.java` to  print out the call stack when the
-   `factorial` method reaches the base case. Replace the if-statement with the following:
+   `factorial` method reaches the base case. Replace the if-statement with the following,
+   where the `INSERT ANSWER HERE` lines ares to be modified later:
    
    ```java
    if ((n == 0) || (n == 1)) {
        //   i. INSERT ANSWER HERE
        //  ii. INSERT ANSWER HERE
        // iii. INSERT ANSWER HERE
-       Thread.currentThread().dumpStack(); // 
+       Thread.currentThread().dumpStack(); // print call stack
        return 1;
    } // if
    ```
