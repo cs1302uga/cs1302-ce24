@@ -419,7 +419,7 @@ command depends on your present working directory), then please note that contex
 1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
    
    ```
-   $ submit cs1302-ce25 cs1302a
+   $ submit cs1302-ce24 cs1302a
    ```
    
 ![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
