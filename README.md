@@ -449,7 +449,14 @@ command depends on your present working directory), then please note that contex
      1. Do something with the result.
      1. Return the modified result so it can be passed up the call stack.
    
-   * More.
+   * Let's relate this back to `splitString`:
+     * How do you determine what to keep for use later in the method call and what to pass into the sub-problem? 
+       That's similar to i and ii. In the recursion-like tree on the exercise, under any particular call 
+       (except base case), you can see what was passed into the sub-problem (look at the recursive call) 
+       and what was kept for use later (look at the `list.add` call).
+     * How do you get the list that's passed up from the recursive call? That's similar to iii.
+     * How do you modify / add to the list that's passed up? That's similar to iv.
+     * How do you ensure that the list you've added to makes its way back up the call stack? That's similar to v.
 
 1. Add a `main` method to execute your `splitString` method with various input strings to verify that 
    it works properly. At the very least, please check it with the examples above. You may find the
