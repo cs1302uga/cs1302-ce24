@@ -444,11 +444,11 @@ command depends on your present working directory), then please note that contex
    
    We've labeled the lines `i`--`v` above. Here are some descriptions:
    
-   1. determine what you need to keep for use later in this method call
-   1. determine what you need to pass into the sub-problem
-   1. get the result of calling the sub-problem
-   1. do something with the result
-   1. return so that it can be passed up the call stack
+   1. Determine what you need to keep for use later in this method call.
+   1. Determine what you need to pass into the sub-problem.
+   1. Get the result of calling the sub-problem.
+   1. Do something with the result.
+   1. Return the modified result so it can be passed up the call stack.
    
    Let's connect it back to `splitString`:
    
