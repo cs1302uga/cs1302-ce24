@@ -442,7 +442,9 @@ command depends on your present working directory), then please note that contex
          return result;                //   v
      } // factorial
      ```
+     
    * We've labeled the lines i--v above. Here are some descriptions:
+   
      1. Determine what you need to keep for use later in this method call.
      1. Determine what you need to pass into the sub-problem.
      1. Get the result of calling the sub-problem.
@@ -450,6 +452,7 @@ command depends on your present working directory), then please note that contex
      1. Return the modified result so it can be passed up the call stack.
    
    * Let's relate this back to `splitString`:
+   
      * How do you determine what to keep for use later in the method call and what to pass into the sub-problem? 
        That's similar to i and ii. In the recursion-like tree on the exercise, under any particular call 
        (except base case), you can see what was passed into the sub-problem (look at the recursive call) 
