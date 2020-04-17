@@ -450,6 +450,7 @@ command depends on your present working directory), then please note that contex
    1. Do something with the result.
    1. Return the modified result so it can be passed up the call stack.
    
+   <br/>
    Let's connect it back to `splitString`:
    
    1. How do you determine what to keep for use later in the method call and what to pass into the sub-problem? 
