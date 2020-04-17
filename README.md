@@ -425,30 +425,31 @@ command depends on your present working directory), then please note that contex
    
    **Having trouble relating this to the actual code?** That's okay! This is likely very new. It may
    surprise you to note that the problem decomposition for this method is almost identical to
-   `factorial`. You probably didn't make the connection due to how `factorial` was written. Here is
-   another way to write `factorial` using recursion that maintains the same problem decomposition, but
-   with more Java statements added to help us connect some dots:
+   `factorial`. You probably didn't make the connection due to how `factorial` was written. 
    
-   ```java
-   public static int factorial(int n) {
-       if (n == 0) {
-           return 1;
-       } // if
-       int keep = n;                 //   i
-       int pass = n - 1;             //  ii
-       int result = factorial(pass); // iii
-       result = keep * result;       //  iv
-       return result;                //   v
-   } // factorial
-   ```
+   * Here is another way to write `factorial` using recursion that maintains the same problem decomposition, but
+     with more Java statements added to help us connect some dots:
    
-   We've labeled the lines `i`--`v` above. Here are some descriptions:
+     ```java
+     public static int factorial(int n) {
+         if (n == 0) {
+             return 1;
+         } // if
+         int keep = n;                 //   i
+         int pass = n - 1;             //  ii
+         int result = factorial(pass); // iii
+         result = keep * result;       //  iv
+         return result;                //   v
+     } // factorial
+     ```
+   * We've labeled the lines i--v above. Here are some descriptions:
+     1. Determine what you need to keep for use later in this method call.
+     1. Determine what you need to pass into the sub-problem.
+     1. Get the result of calling the sub-problem.
+     1. Do something with the result.
+     1. Return the modified result so it can be passed up the call stack.
    
-   1. Determine what you need to keep for use later in this method call.
-   1. Determine what you need to pass into the sub-problem.
-   1. Get the result of calling the sub-problem.
-   1. Do something with the result.
-   1. Return the modified result so it can be passed up the call stack.
+   * More.
    
 1. Add a `main` method to execute your `splitString` method with various input strings to verify that 
    it works properly. At the very least, please check it with the examples above. You may find the
