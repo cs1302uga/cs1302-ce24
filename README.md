@@ -423,6 +423,42 @@ command depends on your present working directory), then please note that contex
    hint about the base case formulation, and it illustrates that some work needs to be done in the
    recursive case between the recursive call and the return statement.
    
+   **Having trouble relating this to the actual code?** That's okay! This is likely very new. It may
+   surprise you to note that the problem decomposition for this method is almost identical to
+   `factorial`. You probably didn't make the connection due to how `factorial` was written. Here is
+   another way to write `factorial` using recursion that maintains the same problem decomposition, but
+   with more Java statements added to help us connect some dots:
+   
+   ```java
+   public static int factorial(int n) {
+       if (n == 0) {
+           return 1;
+       } // if
+       int keep = n;                 //   i
+       int pass = n - 1;             //  ii
+       int result = factorial(pass); // iii
+       result = keep * result;       //  iv
+       return result;                //   v
+   } // factorial
+   ```
+   
+   We've labeled the lines `i`--`v` above. Here are some descriptions:
+   1. determine what you need to keep for use later in this method call
+   1. determine what you need to pass into the sub-problem
+   1. get the result of calling the sub-problem
+   1. do something with the result
+   1. return so that it can be passed up the call stack
+   
+   Let's connect it back to `splitString`:
+   1. How do you determine what to keep for use later in the method call and what to pass into the sub-problem? 
+      That's similar to `i` and `ii`.
+      1. In the recursion-like tree for `splitString`, under any particular call (except base case), 
+         you can see what was passed into the sub-problem (look at the recursive call) and what 
+         was kept for use later (look at the `list.add` call).
+   1. How do you get the list that's passed up from the recursive call? That's similar to `iii`.
+   1. How do you modify / add to the list that's passed up? That's similar to `iv`.
+   1. How do you ensure that the list you've added to makes its way back up the call stack? That's similar to `v`.
+   
 1. Add a `main` method to execute your `splitString` method with various input strings to verify that 
    it works properly. At the very least, please check it with the examples above. You may find the
    following method useful to include for testing purposes:
