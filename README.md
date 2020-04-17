@@ -411,7 +411,7 @@ command depends on your present working directory), then please note that contex
    |`splitString("GNU's not Unix", "'")`            | `["GNU", "s not Unix"]`                       |
    |`splitString("Recursion is fun!", "9")`         | `["Recursion is fun!"]`                       |
    
-   Here is a <a id="recursion-tree" /> recursion-like tree for `splitString("Hello_1302_students!", "_")` that you might find useful:
+   Here is a <a name="recursion-tree">recursion-like tree</a> for `splitString("Hello_1302_students!", "_")` that you might find useful:
    
    ![`splitString` tree example](splitString_tree.png)
    
