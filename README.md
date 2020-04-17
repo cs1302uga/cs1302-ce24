@@ -435,15 +435,15 @@ command depends on your present working directory), then please note that contex
          if (n == 0) {
              return 1;
          } // if
-         int keep = n;                 //   i
-         int pass = n - 1;             //  ii
-         int result = factorial(pass); // iii
-         result = keep * result;       //  iv
-         return result;                //   v
+         int keep = n;                 // a
+         int pass = n - 1;             // b
+         int result = factorial(pass); // c
+         result = keep * result;       // d
+         return result;                // e
      } // factorial
      ```
      
-   * We've labeled the lines i--v above. Here are some descriptions:
+   * We've labeled the lines a--e above. Here are some descriptions:
    
      1. Determine what you need to keep for use later in this method call.
      1. Determine what you need to pass into the sub-problem.
@@ -454,12 +454,12 @@ command depends on your present working directory), then please note that contex
    * Let's relate this back to `splitString`:
    
      * How do you determine what to keep for use later in the method call and what to pass into the sub-problem? 
-       That's similar to i and ii. In the recursion-like tree on the exercise, under any particular call 
+       That's similar to (a) and (b). In the recursion-like tree on the exercise, under any particular call 
        (except base case), you can see what was passed into the sub-problem (look at the recursive call) 
        and what was kept for use later (look at the `list.add` call).
-     * How do you get the list that's passed up from the recursive call? That's similar to iii.
-     * How do you modify / add to the list that's passed up? That's similar to iv.
-     * How do you ensure that the list you've added to makes its way back up the call stack? That's similar to v.
+     * How do you get the list that's passed up from the recursive call? That's similar to (c).
+     * How do you modify / add to the list that's passed up? That's similar to (d).
+     * How do you ensure that the list you've added to makes its way back up the call stack? That's similar to (e).
 
 1. Add a `main` method to execute your `splitString` method with various input strings to verify that 
    it works properly. At the very least, please check it with the examples above. You may find the
