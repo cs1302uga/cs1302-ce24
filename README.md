@@ -1,7 +1,6 @@
 # cs1302-ce24 Recursive Problems
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
-![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 > "To understand recursion, you must understand recursion"
 
@@ -21,7 +20,7 @@ and stacks in solving typical problems.
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
-logged into the Nike server. 
+logged into the Odin server. 
 
 **NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
 command that you typed to make the related action happen. If context is necessary (e.g., the 
@@ -56,7 +55,7 @@ command depends on your present working directory), then please note that contex
       
       Add and commit the `.gitignore` file to the repository.
       
-   1. Update the POM so that the project works with Java 8. After that, add and commit the `pom.xml` file to 
+   1. Update the POM so that the project works with Java 11. After that, add and commit the `pom.xml` file to 
       the repository.
    
    1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce24/App.java`) and the unit test files 
@@ -177,7 +176,7 @@ command depends on your present working directory), then please note that contex
 
 ### Checkpoint 1.3 Steps
 
-1. Make sure you are logged into Nike with X-forwarding enabled. If not, logout and log back in
+1. Make sure you are logged into Odin with X-forwarding enabled. If not, logout and log back in
    appropriately. 
    
 1. Run the `CallStackApp` program to explore some call stacks using a GUI: 
@@ -395,9 +394,9 @@ command depends on your present working directory), then please note that contex
     */
    public static List<String> splitString(String str, String delim)
    ```
-   where `List<E>` is [`java.util.List<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/List.html),
-   which has known impementations like [`ArrayList<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)
-   and [`LinkedList<E>`](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html).
+   where `List<E>` is [`java.util.List<E>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html),
+   which has known impementations like [`ArrayList<E>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html)
+   and [`LinkedList<E>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html).
 
 1. Implement the `splitString` method using recursion (**no loops!**). The method should split the 
    specified string into tokens based off of the provided delimiter. Each token will be added to
@@ -470,7 +469,7 @@ command depends on your present working directory), then please note that contex
        System.out.println(output);
    } // printList
    ```
-   where `Collectors` is [`java.util.stream.Collectors`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Collectors.html).
+   where `Collectors` is [`java.util.stream.Collectors`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html).
 
 1. After you've confirmed that your `splitString` method works correctly, add and commit your `src` 
    directory which now contains `SplitString.java` in one of its subdirectories.
@@ -487,29 +486,37 @@ command depends on your present working directory), then please note that contex
 
 **Each student needs to individually submit their own work.**
 
-1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
-   directory with the following information:
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce24`
+   directory with the following information.
 
    1. Your name and UGA ID number;
    1. Collaborator names, if any; and
-   1. The weekly code (listed with the exercise on eLC).
+   1. If you created the API website, include the full link to the site you generated.
    
-   Here is an example:
+   Here is an example of the contents of `SUBMISSION.md`.
    
    ```
    1. Sally Smith (811-000-999)
    2. Collaborators: Joe Allen, Stacie Mack
-   3. Weekly Code: replace-with-actual-code
+   3. https://webwork.cs.uga.edu/~user/cs1302-ce24-doc
    ```
 
-1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
-   passes the `checkstyle` audit, then stage and commit all changes, if needed.
-
-1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
+1. Change directories to the parent of `cs1302-ce24` (e.g., `cd ..` from `cs1302-ce24`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
+   We won't repeat those steps here and you can view them as optional.
+   
+1. Use the `submit` command to submit this exercise to `csci-1302`:
    
    ```
-   $ submit cs1302-ce24 cs1302a
+   $ submit cs1302-ce24 csci-1302
    ```
+   
+   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
+   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
+   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
+
+   **Note:** You must be on Odin to submit.
 
 <hr/>
 
