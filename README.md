@@ -463,12 +463,14 @@ command depends on your present working directory), then please note that contex
 1. Add a `main` method to execute your `splitString` method with various input strings to verify that 
    it works properly. At the very least, please check it with the examples above. You may find the
    following method useful to include for testing purposes:
-   ```
+   
+   ```java
    public static void printList(List<String> list) {
        String output = list.stream().collect(Collectors.joining("\", \"", "[\"", "\"]"));
        System.out.println(output);
    } // printList
    ```
+   
    where `Collectors` is [`java.util.stream.Collectors`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html).
 
 1. After you've confirmed that your `splitString` method works correctly, add and commit your `src` 
