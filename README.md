@@ -187,7 +187,7 @@ command depends on your present working directory), then please note that contex
    
    ![CallStackApp Screenshot](callstack_app.PNG)
    
-1. Add the following multi-line comment to the end of `Fac.java` (after the endinf curly brace for the class}, 
+1. Add the following multi-line comment to the end of `Fac.java` (after the ending curly brace for the class}, 
    then use it to fill in answers for the questions below.
    
    ```java
