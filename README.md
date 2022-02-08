@@ -394,9 +394,9 @@ command depends on your present working directory), then please note that contex
     */
    public static List<String> splitString(String str, String delim)
    ```
-   where `List<E>` is [`java.util.List<E>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html),
-   which has known impementations like [`ArrayList<E>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html)
-   and [`LinkedList<E>`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/LinkedList.html).
+   where `List<E>` is [`java.util.List<E>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html),
+   which has known impementations like [`ArrayList<E>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html)
+   and [`LinkedList<E>`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedList.html).
 
 1. Implement the `splitString` method using recursion (**no loops!**). The method should split the 
    specified string into tokens based off of the provided delimiter. Each token will be added to
@@ -471,7 +471,7 @@ command depends on your present working directory), then please note that contex
    } // printList
    ```
    
-   where `Collectors` is [`java.util.stream.Collectors`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/stream/Collectors.html).
+   where `Collectors` is [`java.util.stream.Collectors`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Collectors.html).
 
 1. After you've confirmed that your `splitString` method works correctly, add and commit your `src` 
    directory which now contains `SplitString.java` in one of its subdirectories.
